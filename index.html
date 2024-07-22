@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Weather-App</title>
+</head>
+<body>
+    <div class="container fadeIn">
+        <div class="search">
+            <p id="time-zone">10:31</p>
+            <div>
+                <input type="text" class="input" placeholder="Search Country">
+                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <div class="location">
+            New York
+        </div>
+
+        <div class="weather-clear">
+            <p>Clear & Sunny <br> Day</p>
+        </div>
+
+        <div class="weather-temp">
+            <img id="img" src="image/sunny.png" alt="">
+            <h1 id="temp">10°</h1>
+            <span id="exact-temp">/ Real Feel 6°</span>
+        </div>
+
+        <div class="weather-description">
+            <div class="windHum-container">
+                <div class="wind-container">
+                    <h3>
+                        <i class="fa-solid fa-wind"></i>
+                        Wind
+                    </h3>
+                    <p id="wind">3.4 <span>km/h</span></p>
+                </div>
+
+                <div class="humidity-container">
+                    <h3>
+                        <i class="fa-solid fa-water"></i>
+                        Humidity
+                    </h3>
+                    <p id="humidity">78 <span>%</span></p>
+                </div>
+            </div>
+
+            <div class="visPress-container">
+                <div class="visibility-container">
+                    <h3>
+                        <i class="fa-regular fa-eye-slash"></i>
+                        Visibility
+                    </h3>
+                    <p id="visibility">10000</p>
+                </div>
+                
+                <div class="pressure-container">
+                    <h3>
+                        <i class="fa-solid fa-gauge"></i>
+                        Pressure
+                    </h3>
+                    <p id="pressure">1016 <span>hpa</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
